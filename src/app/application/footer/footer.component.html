@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Footer with Social icons</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Acceuil</h4>
+          <ul class="list-unstyled">
+            <li><a [routerLink] = "['home']">Page d'acceuil</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Tutoriels</h4>
+          <ul class="list-unstyled">
+            <li><a [routerLink] = "['tutoriel', 1]">Mini tutoriel Angular 10</a></li>
+            <li><a [routerLink] = "['tutoriel', 2]">Mini tutoriel Crud</a></li>
+            <li><a [routerLink] = "['tutoriel', 3]">Mini tutoriel des relations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Autre</h4>
+          <ul class="list-unstyled">
+            <li><a [routerLink] = "['contact']">Contact</a></li>
+            <li><a [routerLink] = "['crud']">CRUD</a></li>
+            <li><a [routerLink] = "['formulaire']">Ajoutez un User</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4>Nous suivre</h4>
+            <ul class="social-network social-circle">
+             <li><a href="https://www.facebook.com/CegepAndreLaurendeau/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="https://fr.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2020 - Antoine Lamoureux.  All rights reserved.</p>
+		</div>
+	</div>
+  </div>
+  </div>
+</footer>
+  </body>
+</html>

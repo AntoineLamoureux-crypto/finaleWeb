@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- image icon du site 100% Bootstrap-->
+    <link rel="title icon" type="image/png" href="images/title-img.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Fontawsome fas-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Site 100% Bootstrap 4 [SPA]</title>
+        <!-- End Section Équipe-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Section Banner-->
+    <section>
+        <div class="container-fluid" id="front-page">
+            <div class="row justify-content-center align-items-center" style="height:100vh">
+                <div class="text-center col-sm-10">
+                    <h1 class="display-2 text-capitalize"><span class="text-danger">Travail</span>
+                        <span class="text-white font-weight-bold">certificatif</span>
+                    </h1>
+                    <h2 class="font-weight-light font-italic text-light">Voir la liste des Users</h2>
+                    <a [routerLink] = "['/crud']" class="btn btn-danger btn-lg px-4 m-3">Press Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Banner-->
+
+    <!-- Start Section Expertises-->
+    <section class="bg-light p-5">
+        <div class="container-fluid">
+            <!-- Titre-->
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-dark display-2">En apprendre d'avantage</h1>
+                    <p class="lead text-secondary">Les tutoriels disponible présentement</p>
+                </div>
+            </div>
+            <!-- Fin Titre-->
+            <!-- Emmet du code qui suit: div.row.text-center>div>i+h1+p+a-->
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="fas fa-desktop fa-6x text-success mb-3"></i>
+                    <h1 class="text-success">Angular</h1>
+                    <p class="text-dark my-4">En apprendre d'avantage sur Angular</p>
+                    <a [routerLink] = "['/tutoriel', 1]" class="btn btn-outline-success">Cliquez ici !</a>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="fas fa-edit fa-6x text-warning mb-3"></i>
+                    <h1 class="text-warning">L'opérateur CRUD</h1>
+                    <p class="text-dark my-4">En apprendre d'avantage sur les composants de l'opérateur CRUD</p>
+                    <a [routerLink] = "['/tutoriel', 2]" class="btn btn-outline-warning">Cliquez ici !</a>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="fas fa-cogs fa-6x text-danger mb-3"></i>
+                    <h1 class="text-danger">Les relations</h1>
+                    <p class="text-dark my-4">En apprendre d'avantage sur les relations entre objets</p>
+                    <a [routerLink] = "['/tutoriel', 3]" class="btn btn-outline-danger">Cliquez ici !</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Expertises-->
+  </body>
+</html>

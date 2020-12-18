@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://github.com/zaratechs/420-345-G001-A20/wiki/Travail-final"><i class="fas fa-child text-light fa-2x mr-2 ">Antoine</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-3">
+      <li class="nav-item mr-3">
+        <a  routerLink="home" class="nav-link text-light">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mr-3 text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tutoriel
+        </a>
+        <ul class="dropdown-menu">
+          <li><a [routerLink] = "['tutoriel', 1]" class="dropdown-item">Mini tutoriel Angular 10</a></li>
+          <li><a [routerLink] = "['tutoriel', 2]" class="dropdown-item">Mini tutoriel Crud</a></li>
+          <li><a [routerLink] = "['tutoriel', 3]" class="dropdown-item">Mini tutoriel des relations</a></li>
+          <div class="dropdown-divider"></div>
+          <li><a [routerLink] = "['tutoriel', 4]" class="dropdown-item" href="#">Mini tutoriel</a></li>
+        </ul>
+      </li>
+      <li class="nav-item mr-3">
+        <a [routerLink]="['formulaire']" class="nav-link text-light" href="#">Formulaire</a>
+      </li>
+      <li class="nav-item mr-3">
+        <a [routerLink]="['crud']" class="nav-link text-light" href="#">CRUD</a>
+      </li>
+      <li class="nav-item mr-3 ">
+        <a [routerLink]="['contact']" class="nav-link text-light" href="#">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0 text-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,159 @@
+<ng-container [ngSwitch]="tutorielLinkId">
+  <ng-container *ngSwitchCase="1">
+    <div class="jumbotron text-center">
+        <h1>Mini tutoriel Angular 10</h1>
+        <p>Sur cette page vous allez en apprendre plus sur Angular</p> 
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Introduction</h3>
+            <p>Angular est un framework JavaScript développé par Google et reconnu pour être l'un des frameworks les plus complets. Il embarque en effet nativement nombre de fonctionnalités le qualifiant pour le développement d'applications web, même les plus complexes.</p>
+            <p>Grâce à son évolution, Angular est cependant également adapté à tout projet d'application de bureau ou mobile. Rapide à déployer et puissant, il sait convaincre petites et grandes entreprises.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Histoire d'Angular</h3>
+            <p>Angular est parfois également appelé Angular v2 et plus ou Angular 2+. Il est en effet une réécriture complète d'AngularJS, la première version de ce framework côté client que l'on doit à Google. Pour éviter la confusion entre le nom du framework et le numéro des versions, AngularJS continue de nommer la première version.</p>
+            <p>Les versions 2 et ultérieures ont perdu le « JS » (pour JavaScript) et le framework s'appelle désormais tout simplement Angular.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Avantages d'Angular</h3>        
+            <p>Contrairement à l'un de ses principaux concurrents, React, Angular ne sert pas seulement à créer des composants. Il est au contraire un framework complet proposant au développeur tous les outils nécessaires au développement d'applications web, mobile et desktop. Incluant des outils de routing ou de gestion du http, Angular embarque tout ce dont une entreprise peut avoir besoin pour développer une application.</p>
+            <p>Il permet en plus de les faire évoluer au fur et à mesure du développement des besoins d'une entreprise.</p>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="2">
+    <div class="jumbotron text-center">
+        <h1>Mini tutoriel Crud</h1>
+        <p>Sur cette page vous en allez en apprendre d'avantage sur les opérations du crud</p>
+        <hr>
+        <p>Le terme CRUD est étroitement lié avec la gestion des données numériques. Plus précisément, CRUD est un acronyme des noms des quatre opérations de base de la gestion de la persistance des données et applications</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h3>Create</h3>
+            <p>Cet opération permet de crée un objet afin de répondre à un besoin d'un contexte quelconque</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>Read</h3>
+            <p>Cet opération permet de lire un objet afin de répondre à un besoin d'un contexte quelconque</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>Update</h3>        
+            <p>Cet opération permet de modifier un objet afin de répondre à un besoin d'un contexte quelconque</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>Delete</h3>  
+            <p>Cet opération permet de suprimer un objet afin de répondre à un besoin d'un contexte quelconque</p>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="3">
+    <div class="jumbotron text-center">
+        <h1>Mini tutoriel sur les relations</h1>
+        <p>Sur cette page vous allez en apprendre d'avantage sur les relations entre les classes</p> 
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Les différents types de relations</h3>
+            <hr>
+            <h2>Héritage</h2>
+            <p>L'héritage est un concept de programmation très répendu, il est présent dans tout les projets ou presque. Des classes enfant vont hériter d'une classe parent. 
+              Cela signifie que les efants vont prendre les meme charactéristiques que de leur classe parent possède.
+            </p>
+            <hr>
+            <h2>Implémentation</h2>
+            <p>L'implémentation est un autre concept de programmtion qui est unpeux comme l'héritage. Une classe va implémenter une interface. Une interface est comme un genre de contrat qui défénis de manière abstracte toutes les méthodes que celle ci vont devoir utiliser lorsque qu'une classe implémente l'interface.
+            </p>
+            <hr>
+            <h2>Association</h2>
+            <p>Une association modélise une relation entre deux classes. Cette relation peux soit être une composition, agrégation, de type 1:1, de type 1:N ou encore de type N:N
+            </p>
+            <hr>
+            <h2>Composition</h2>
+            <p>La compositon est une association qui modélise une relation obligatoire entre deux classes. Si la classe A compose la classe B, avec la supression de le classe A, la classe B va également être suprimmé.
+            </p>
+            <hr>
+            <h2>Agrégation</h2>
+            <p>L'agrégation est aussi une association qui modélise une relation obligatoire mais qui ne va pas être suprimmer si ca classe en relation elle est.
+            </p>
+            <hr>
+          </div>
+          <div class="col-lg-6">
+            <h3>Les différents types d'associations</h3>
+            <hr>
+            <h2>One to One</h2>
+            <p>Cette relation définie une association entre deux classes de type 1 à 1. Cela signifie par exemple, pour une classe A il y a une classe B et l'inverse.
+            </p>
+            <hr>
+            <h2>One to Many</h2>
+            <p>Cette relation définie une association entre deux classes de type 1 à plusieurs. Cela signifie par exemple, pour une classe A, il va y avoir plusieurs classe B et non l'inverse.
+            </p>
+            <hr>
+            <h2>Many to Many</h2>
+            <p>Cette relation qui est selon moi, la plus complexe, définie encore une relation d'association entre 2 classes mais de plusieurs à plusieurs. Cela signifie par exemple que, pour une classe A il va y avoir plusieurs classe B et l'inverse. Cette relation nécessite une classe d'intersection pour asssurer le transfert de données et cela avec un id pour chacune des classes.
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="4">
+    <div class="jumbotron text-center">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam?</p> 
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Lorem, ipsum.</h3>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <div class="jumbotron text-center">
+        <h1>Rien du tout</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 3</h3>        
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+</ng-container>
